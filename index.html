@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,12 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Studio</title>
+        <title>Studio</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="container header-agency">
-        <nav class="nav-style">
+    <header>
+      <div class="container header-agency">
+      <nav class="nav-style">
           <a
             class="webstudio link-style"
             href="#"
@@ -24,7 +25,7 @@
             title="WebStudio"
             ><span class="highlight">Web</span>Studio
           </a>
-          <ul class="nav-list inner-nav">
+          <ul class="inner-nav nav-list">
             <li>
               <a
                 class="nav-item link-style"
@@ -55,33 +56,29 @@
             </li>
           </ul>
         </nav>
-        <ul class="nav-list">
+        <ul class="nav-list contact-list">
           <li class="contacts">
-            <a href="mailto:info@devstudio.com">
-              <svg class="svg-style" width="16" height="12">
-                <use xlink:href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-            </a>
             <a class="nav-contact link-style" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="svg-style" width="16" height="12">
+                <use xlink:href="./images/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a
             >
           </li>
           <li class="contacts">
-            <a href="tel:+48111111111">
-              <svg class="svg-style" width="10" height="16">
-                <use xlink:href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </a>
             <a class="nav-contact link-style" href="tel:+48111111111"
-              >+48111111111</a
+              ><svg class="svg-style" width="10" height="16">
+                <use xlink:href="./images/icons.svg#icon-phone"></use>
+              </svg>+48111111111</a
             >
           </li>
         </ul>
+        </div> 
       </header>
       <main>
         <section class="section-primary">
+          <div class="container">
           <h1 class="header-primary">
-            EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
           <button
             class="button-style button-agency"
@@ -101,10 +98,11 @@
               />
             </div>
           </div>
+          </div>
         </section>
         <div>
           <section class="section container">
-            <ul class="nav-list">
+            <ul class="lorem-list">
               <li class="list-box">
                 <div class="icon-background">
                   <svg class="lorem-icon" width="70" height="70">
@@ -155,25 +153,21 @@
               </li>
             </ul>
           </section>
-          <section class="section container task-section">
+          <section class="section task-section">
+            <div class="container">
             <h2 class="header-secondary">Czym się zajmujemy</h2>
-            <ul class="nav-list">
-              <li class="list-box">
-                <figure class="picture-style">
-                  <img class="picture"
+            <ul class="project-list">
+              <li class="picture-style">
+                <img class="picture"
                     src="./images/first-developer-at-work.jpg"
                     width="370"
                     height="294"
                     alt="zdjęcie programisty piszącego kod"
                     title="zdjęcie programisty piszącego kod"
                   />
-                  <div class="picture-description-box">
-                    <p class="picture-description">APLIKACJE KOMPUTEROWE</p>
-                  </div>
-                </figure>
+                  <p class="picture-description">APLIKACJE KOMPUTEROWE</p>
               </li>
-              <li class="list-box">
-                <figure class="picture-style">
+              <li class="picture-style">
                   <img
                     class="picture"
                     src="./images/second-developer-at-work.jpg"
@@ -182,13 +176,9 @@
                     alt="zdjęcie programisty projektującego aplikację"
                     title="zdjęcie programisty projektującego aplikację"
                   />
-                  <div class="picture-description-box">
                     <p class="picture-description">APLIKACJE MOBILNE</p>
-                  </div>
-                </figure>
               </li>
-              <li class="list-box">
-                <figure class="picture-style">
+              <li class="picture-style">
                   <img
                   class="picture"
                     src="./images/third-developer-at-work.jpg"
@@ -197,20 +187,17 @@
                     alt="zdjęcie programisty pracującego nad szatą graficzną"
                     title="zdjęcie programisty pracującego nad szatą graficzną"
                   />
-                  <div class="picture-description-box">
                     <p class="picture-description">ROZWIĄZANIA GRAFICZNE</p>
-                  </div>
-                </figure>
               </li>
             </ul>
+          </div>
           </section>
         </div>
         <section class="team section">
           <div class="container">
             <h2 class="header-secondary">Nasz zespół</h2>
-            <ul class="nav-list">
-              <li class="list-box">
-                <figure class="team-member-box">
+            <ul class="team-list">
+              <li class="team-member-box">
                   <img
                     src="./images/photo-product-designer.jpg"
                     width="270"
@@ -218,121 +205,102 @@
                     alt="zdjęcie Product Designera"
                     title="zdjęcie Product Designera"
                   />
-                  <figcaption class="box-description">
-                    <strong class="team-member-name">John Doe</strong>
+                  <div class="box-description">
+                    <h3 class="team-member-name">John Doe</h3>
                     <p class="team-member-description">Product Designer</p>
                     <ul class="sm-icons">
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Instagram">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Instagram">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-instagram"
                             ></use>
                           </svg>
                         </a>
-                      </div>
+                      
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Twitter">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Twitter">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-twitter"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Facebook">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Facebook">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-facebook"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe In">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe In">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-linkedin"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                     </ul>
-                  </figcaption>
-                </figure>
+                  </div>
               </li>
-              <li class="list-box">
-                <figure class="team-member-box">
-                  <img
+              <li class="team-member-box">
+                <img
                     src="./images/photo-frontend-developer.jpg"
                     width="270"
                     height="260"
                     alt="zdjęcie Frontend Developera"
                     title="zdjęcie Frontend Developera"
                   />
-                  <figcaption class="box-description">
-                    <strong class="team-member-name">John Doe</strong>
+                  <div class="box-description">
+                    <h3 class="team-member-name">John Doe</h3>
                     <p class="team-member-description">Frontend Developer</p>
                     <ul class="sm-icons">
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Instagram">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Instagram">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-instagram"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Twitter">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Twitter">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-twitter"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Facebook">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Facebook">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-facebook"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe In">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe In">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-linkedin"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                     </ul>
-                  </figcaption>
-                </figure>
+                  </div>
               </li>
-              <li class="list-box">
-                <figure class="team-member-box">
+              <li class="team-member-box">
                   <img
                     src="./images/photo-marketing.jpg"
                     width="270"
@@ -340,60 +308,49 @@
                     alt="zdjęcie specjalisty ds marketingu"
                     title="zdjęcie specjalisty ds marketingu"
                   />
-                  <figcaption class="box-description">
-                    <strong class="team-member-name">John Doe</strong>
+                  <div class="box-description">
+                    <h3 class="team-member-name">John Doe</h3>
                     <p class="team-member-description">Marketing</p>
                     <ul class="sm-icons">
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Instagram">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Instagram">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-instagram"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Twitter">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Twitter">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-twitter"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Facebook">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Facebook">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-facebook"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe In">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe In">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-linkedin"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                     </ul>
-                  </figcaption>
-                </figure>
               </li>
-              <li class="list-box">
-                <figure class="team-member-box">
+              <li class="team-member-box">
                   <img
                     src="./images/photo-ul-designer.jpg"
                     width="270"
@@ -401,64 +358,55 @@
                     alt="zdjęcie Ul Designera"
                     title="zdjęcie Ul Designera"
                   />
-                  <figcaption class="box-description">
-                    <strong class="team-member-name">John Doe</strong>
+                  <div class="box-description">
+                    <h3 class="team-member-name">John Doe</h3>
                     <p class="team-member-description">Ul Designer</p>
                     <ul class="sm-icons">
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Instagram">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Instagram">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-instagram"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Twitter">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Twitter">
                           <svg class="team-sm-icon" width="20" height="20"">
                             <use
                               xlink:href="./images/icons.svg#icon-twitter"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe Facebook">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe Facebook">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-facebook"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                       <li>
-                        <div class="team-sm-box">
-                        <a href="#" target="_blank" title="John Doe In">
+                        <a class="team-sm-box" href="#" target="_blank" title="John Doe In">
                           <svg class="team-sm-icon" width="20" height="20">
                             <use
                               xlink:href="./images/icons.svg#icon-linkedin"
                             ></use>
                           </svg>
                         </a>
-                      </div>
                       </li>
                     </ul>
-                  </figcaption>
-                </figure>
               </li>
             </ul>
           </div>
         </section>
-        <section class="section container">
+        <section class="section">
+          <div class="container">
           <h2 class="header-secondary">Nasi klienci</h2>
-          <ul class="nav-list">
+          <ul class="client-list">
             <li>
               <a
                 class="client-icon"
@@ -532,9 +480,11 @@
               </a>
             </li>
           </ul>
+        </div>
         </section>
       </main>
       <footer class="footer-section">
+        <div class="container footer-flex">
         <div>
           <a
             class="webstudio link-style"
@@ -570,53 +520,46 @@
           <h3>DOŁĄCZ DO NAS</h3>
           <ul class="nav-list footer-sm-icons">
             <li>
-              <div class="footer-sm-box">
-              <a href="#" target="_blank" title="Instagram">
+              <a class="footer-sm-box" href="#" target="_blank" title="Instagram">
                 <svg class="footer-sm-icon" width="20" height="20">
                   <use
                     xlink:href="./images/icons.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
-            </div>
             </li>
             <li>
-              <div class="footer-sm-box">
-              <a href="#" target="_blank" title="Twitter">
+              <a class="footer-sm-box" href="#" target="_blank" title="Twitter">
                 <svg class="footer-sm-icon" width="20" height="20">
                   <use
                     xlink:href="./images/icons.svg#icon-twitter"
                   ></use>
                 </svg>
               </a>
-              </div>
             </li>
             <li>
-              <div class="footer-sm-box">
-              <a href="#" target="_blank" title="Facebook">
+              <a class="footer-sm-box"href="#" target="_blank" title="Facebook">
                 <svg class="footer-sm-icon" width="20" height="20">
                   <use
                     xlink:href="./images/icons.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
-            </div>
             </li>
             <li>
-              <div class="footer-sm-box">
-              <a href="#" target="_blank" title="In">
+              <a class="footer-sm-box" href="#" target="_blank" title="In">
                 <svg class="footer-sm-icon" width="20" height="20">
                   <use
                     xlink:href="./images/icons.svg#icon-linkedin"
                   ></use>
                 </svg>
               </a>
-            </div>
             </li>
           </ul>
         </div>
+      </div>
       </footer>
-    </div>
+   
     <script src="./js/modal.js"></script>
   </body>
 </html>
